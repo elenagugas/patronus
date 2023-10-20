@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb;INIT=RUNSCRIPT FROM 'src/main/resources/create_schema.sql';
+    schema: PATRONUS
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console.enabled: true
