@@ -1,12 +1,12 @@
 package com.gugas.service
 
 import com.gugas.entity.Device
-import com.gugas.repository.DevicesRepository
+import com.gugas.repository.DeviceRepository
 import org.springframework.stereotype.Service
 
 @Service
-class DeviceService(private val devicesRepository: DevicesRepository) {
+class DeviceService(private val deviceRepository: DeviceRepository) {
     fun createDevice(device: Device): Device {
-        return devicesRepository.save(device)
+        return deviceRepository.save(device)
     }
 }

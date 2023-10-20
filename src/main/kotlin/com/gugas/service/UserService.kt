@@ -1,14 +1,14 @@
 package com.gugas.service
 
 import com.gugas.entity.User
-import com.gugas.repository.DevicesRepository
-import com.gugas.repository.UsersRepository
+import com.gugas.repository.DeviceRepository
+import com.gugas.repository.UserRepository
 import org.springframework.stereotype.Service
 
 @Service
 class UserService(
-    private val userRepository: UsersRepository,
-    private val deviceRepository: DevicesRepository
+    private val userRepository: UserRepository,
+    private val deviceRepository: DeviceRepository
 ) {
     fun createUser(user: User): User {
         return userRepository.save(user)

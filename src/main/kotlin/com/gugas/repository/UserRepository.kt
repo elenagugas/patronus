@@ -5,4 +5,4 @@ import org.springframework.data.repository.ListCrudRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UsersRepository : ListCrudRepository<User?, Long?>
+interface UserRepository : ListCrudRepository<User?, Long?>
